@@ -1,0 +1,27 @@
+package com.example.demo.domain.service;
+
+import org.springframework.beans.BeanUtils;
+import org.springframework.stereotype.Service;
+
+import com.example.demo.domain.model.User;
+import com.example.demo.domain.model.dto.UserDTOInput;
+import com.example.demo.domain.repository.UserRepository;
+
+import lombok.RequiredArgsConstructor;
+
+@Service
+@RequiredArgsConstructor
+public class UserService {
+
+	private final UserRepository userRepository;
+	
+	public User createdUser(UserDTOInput userDto) {
+		var user = new User();
+		BeanUtils.copyProperties(userDto, user, "id");
+		
+//		avisarEmail()
+		
+		return userRepository.save(user);
+	}
+	
+}

@@ -1,0 +1,11 @@
+package com.example.demo.domain.model.dto;
+
+import lombok.Getter;
+
+@Getter
+@Settert
+public class UserDTO {
+
+	private String name;
+	private String email;
+}

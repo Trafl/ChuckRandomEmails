@@ -1,0 +1,16 @@
+package com.example.demo.domain.model.dto;
+
+import jakarta.validation.constraints.NotBlank;
+
+public record UserDTOInput(
+		
+		@NotBlank
+		String name,
+		
+		@NotBlank
+		String email
+		
+		) {
+
+	
+}
