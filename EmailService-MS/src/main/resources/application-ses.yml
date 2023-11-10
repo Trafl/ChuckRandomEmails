@@ -1,0 +1,11 @@
+spring:
+  profiles:
+    active: ses
+  config:
+    name: application, application-ses
+
+  mail:
+    host: email-smtp.us-east-1.amazonaws.com
+    port: 587
+    username: ${MAIL_USERNAME_AWS}
+    password: ${MAIL_PASSWORD_AWS}

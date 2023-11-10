@@ -25,9 +25,9 @@ public class SwaggerConfig {
 			                    .addSchemas("ProblemDetail", new Schema<ProblemDetail>()
 			                            .type("object")
 			                            .addProperty("type", new StringSchema().example("https://chuck.com/errors/entity-not-found"))
-			                            .addProperty("title", new StringSchema().example("Unregistered doctor"))
+			                            .addProperty("title", new StringSchema().example("Unregistered user"))
 			                            .addProperty("status", new StringSchema().example(404))
-			                            .addProperty("detail", new StringSchema().example("Doctor id 5 was not found"))
+			                            .addProperty("detail", new StringSchema().example("User id 5 was not found"))
 			                            .addProperty("timestamp", new StringSchema().example("2023-10-16T19:32:54.253417400Z"))
 										));			
 	

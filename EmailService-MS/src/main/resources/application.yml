@@ -1,4 +1,9 @@
 spring:
+  profiles:
+    active: gmail
+  config:
+    name: application, application-gmail
+     
   application:
     name: email-ms
   
@@ -9,11 +14,6 @@ spring:
     password: guest
     
   mail:
-    host: email-smtp.us-east-1.amazonaws.com
-    port: 587
-    username: ${MAIL_USERNAME}
-    password: ${MAIL_PASSWORD}
-    
     properties:
       mail:
         smtp:
