@@ -2,6 +2,7 @@
 This microservice was conceived as a practical exercise to apply recently acquired concepts. 
 The implementation adopts a decoupled architecture, typical of microservices, encompassing both synchronous and asynchronous calls. 
 Additionally, the service incorporates the ability to consume external APIs from the Web, following discovery and gateway standards.
+It's worth noting that the email service functions for both Amazon Simple Email Service and the Google SMTP server, utilizing two distinct sets of application properties for this implementation.
 
 The main functionality of this microservice is to send messages containing random phrases from the famous actor Chuck Norris to the email addresses of registered users.
 
@@ -17,6 +18,8 @@ The main functionality of this microservice is to send messages containing rando
 - Spring Cloud OpenFeign
 - RabbitMQ
 - Docker
+- Amazon Simple Email Service
+- Google SMTP server
 - External API [https://api.chucknorris.io/](https://api.chucknorris.io/)
 
 ## Documentation
